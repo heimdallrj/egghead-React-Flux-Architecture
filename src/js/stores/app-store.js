@@ -66,8 +66,12 @@ var AppStore = assign(EventEmitter.prototype, {
   },
 
   addChangeListner: function(callback) {
-    this.removeListner(CHANGE_EVENTS, callback);
+    this.on(CHANGE_EVENTS, callback);
   },
+
+  removeChangeListner: function(callback) {
+    this.removeListener(CHANG_EVENTS, callback);
+  },  
 
   getCart: function() {
     return _cartItems;
