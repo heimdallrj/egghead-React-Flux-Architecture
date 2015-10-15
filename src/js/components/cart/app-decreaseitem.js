@@ -1,5 +1,5 @@
 var React = require('react');
-var AppActions = require('../actions/app-actions');
+var AppActions = require('../../actions/app-actions');
 
 var DecreaseItem = React.createClass({
   handler: function() {
